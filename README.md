@@ -3,7 +3,7 @@ import urllib.request
 import urllib.error
 
 
-def check_website(url, timeout=10):
+def check_website(url, timeout=1):
     request = urllib.request.Request(
         url,
         headers={"User-Agent": "WebsiteMonitor/1.0"},
